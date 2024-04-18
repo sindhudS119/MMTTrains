@@ -1,0 +1,321 @@
+package Mmt_PageFactory;
+
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.InputEvent;
+import java.awt.event.KeyEvent;
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class TrainSearchPageFactory {
+	    WebDriver driver;
+	    Robot r;
+	    
+	    @FindBy(xpath="//a[@href=\"https://www.makemytrip.com/railways/\"]")
+	    WebElement trains;
+	
+	    @FindBy(xpath="//div[@data-cy=\"RailSearchWidget_338\"]/label")
+		WebElement source;
+	    
+		@FindBy(xpath="//div[@role=\"combobox\"]/child::input")
+		WebElement sourceInput;
+		
+		@FindBy(xpath="//div[@data-cy=\"RailSearchWidget_339\"]/label")
+		WebElement destination;
+		
+		@FindBy(xpath="//div[@role=\"combobox\"]/child::input")
+		WebElement 	destInput;
+		
+		@FindBy(xpath="//div[contains(@role,'listbox')]")
+		WebElement destList;
+		
+		@FindBy(xpath="//a[@class=\"primaryBtn font24 latoBold widgetSearchBtn\"]")
+		WebElement search;
+		
+		
+		@FindBy(xpath="//label[contains(@for,'departure')]")
+	    WebElement dateDeparture;
+		
+		
+		@FindBy(xpath="//div[@class=\"DayPicker-Months\"]/div/div/div")
+		WebElement monthAndYear;
+		
+		@FindBy(xpath="//div[@class=\"DayPicker-Day\"]")
+		List<WebElement> datePath;
+		
+		@FindBy(xpath="//div[@class=\"DayPicker-wrapper\"]/child::div/child::span[2]")
+		WebElement nextButton;
+		
+		@FindBy(xpath="//div[@data-cy=\"RailSearchWidget_341\"]/ul/li[@data-cy=\"3A\"]")
+		WebElement classdrop;
+	//----------------------------------------------------------------------------------	
+		@FindBy(xpath="//li[@id=\"react-autowhatever-1-section-0-item-0\"]")
+	    WebElement drop2option;
+		@FindBy(xpath="//input[@id=\"quickFilter-AC\"]")
+	    WebElement filter;
+
+		@FindBy(xpath="//a[@class=\"primaryBtn font24 latoBold widgetSearchBtn\"]")
+	    WebElement sear;
+	//---------------------------------------------------------------------------------	
+		@FindBy(xpath="//div[@data-cy=\"railSW\"]/div/span[@data-cy=\"checkPnrStatus\"]")
+	    WebElement clickcheckpnr;
+		
+		@FindBy(xpath="//a[@data-cy=\"checkStatusButton\"]")
+	    WebElement clickcheckstatus;
+		
+		@FindBy(xpath="//div[@class=\"rsw\"]/div/label/div/div/input[@data-cy=\"enterPnr\"]")
+	    WebElement pnrnumber;
+		@FindBy(xpath="//div[@class=\"rsw\"]/div/label/div/div/input[@data-cy=\"enterPnr\"]")
+	    WebElement clickpnrnumber;
+	//-------------------------------------------------------------------------------------	
+		@FindBy(xpath="//div[@data-cy=\"railSW\"]/div/child::span[@data-cy=\"liveTrainStatus\"]")
+	    WebElement clicklivetrain;
+		
+		@FindBy(xpath="//div[@class=\"rsw_inputBox selectRailCity\"]")
+	    WebElement livetrain;
+		
+		@FindBy(xpath="//div[@class=\"rsw_inner\"]/div/div/div/div/div/input")
+	    WebElement livetraininput;
+		
+		
+		@FindBy(xpath="//ul[@class=\"travelForPopup\"]/child::li/child::span[contains(text(),'C Shivaji Mah T')]")
+	    WebElement selectStopOption;
+		
+		@FindBy(xpath="//div[@class=\"rsw_inputBox selectRailCity selectStation\"]")
+		WebElement selectStop;
+		
+		@FindBy(xpath="//div[@id=\"react-autowhatever-1\"]")
+	    WebElement combobox;
+		
+		@FindBy(xpath="//div[@class=\"rsw_inputBox travelFor inactiveWidget activeWidget\"]/child::label")
+	    WebElement clickdate;
+		
+		@FindBy(xpath="(//li[@data-cy=\"RailTravellingDate_345\"]/span)[1]")
+	    WebElement dateinput;
+		
+		@FindBy(xpath="//a[@data-cy=\"checkStatusButton\"]")
+	    WebElement livestatuscheck;
+		
+	
+		
+		
+		
+		public TrainSearchPageFactory(WebDriver driver)
+		{
+			this.driver=driver;
+			PageFactory.initElements(driver, this);
+		}
+		public void ExplicitWait(WebElement webElement,int time){
+			 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(time));
+				wait.until(ExpectedConditions.elementToBeClickable(webElement));
+		 }
+	//---------------------------------------------------------------------------	
+		public void train()
+		{
+			trains.click();
+			}
+		
+
+		public void enterSource(String s) throws InterruptedException, AWTException  {
+	    	ExplicitWait(source,2);
+	    	source.click();
+	    	ExplicitWait(sourceInput,2);
+	    	sourceInput.sendKeys(s);
+	    	Thread.sleep(3000);
+	    	//ExplicitWait(drop2option,20);
+	    	//drop2option.click();
+	    	
+	        r=new Robot();
+	        //Thread.sleep(3000);
+	        r.keyPress(KeyEvent.VK_DOWN);
+	        r.keyRelease(KeyEvent.VK_DOWN);
+	        r.keyPress(KeyEvent.VK_ENTER);	       
+	        r.keyRelease(KeyEvent.VK_ENTER);
+	    	//wait.until(ExpectedConditions.elementToBeClickable(sourceInput));
+
+	    
+		}
+		public void enterDest(String dest) throws AWTException, InterruptedException  
+        {
+    	ExplicitWait(destInput,2);
+    	destInput.sendKeys(dest);
+    	ExplicitWait(destList,2);
+    	Robot r=new Robot();
+    	r.keyPress(KeyEvent.VK_DOWN);
+        r.keyRelease(KeyEvent.VK_DOWN);
+        r.keyPress(KeyEvent.VK_ENTER);	       
+        r.keyRelease(KeyEvent.VK_ENTER);
+         }
+		public void enterDate(String dep_date) throws InterruptedException  {
+	    	//ExplicitWait(dateDeparture,2);
+	    	JavascriptExecutor js=(JavascriptExecutor) driver;
+	    	js.executeScript("window.scrollBy(0,150)");
+	    	String[] date=dep_date.split(",");
+	    	String day=date[0];
+	    	String monthYear=date[1];
+	    	Boolean flag=true;
+	    	while(flag==true) 
+	    	{
+	    	   if(monthYear.equalsIgnoreCase(monthAndYear.getText()))
+	    	    {
+	    		    break;
+	    	    }
+	    	   else {
+	    		   ExplicitWait(nextButton,2);
+	    		   nextButton.click();
+	    	   }
+	    	}
+	    	//List<WebElement> days=datePath;
+	    	for(WebElement d:datePath)
+	    	{
+	    		String dayOfDate=d.getText();
+	    		if(dayOfDate.equals(day)) 
+	    		{
+	    			d.click();
+	    			break;
+	    		}
+	    	}
+	    }
+		
+		public void classMethod() {
+			classdrop.click();
+		}
+
+		public void searchMethod()
+		{
+			search.click();
+			JavascriptExecutor js=(JavascriptExecutor) driver;
+	    	js.executeScript("window.scrollBy(0,250)");
+		}
+	//--------------------------------------------------------------------------------
+		public void searchMeth()
+		{
+			sear.click();
+		}
+		
+		public void searchFilter()
+		{
+			filter.click();
+			}
+	//---------------------------------------------------------------------------	
+		public void checkpnrstatus()
+		{
+			clickcheckpnr.click();	
+		}
+		
+		public void Clickenterpnr()
+		{
+			clickpnrnumber.click();
+		}
+		
+		public void checkstatuspnr()
+		{
+			clickcheckstatus.click();
+			JavascriptExecutor js=(JavascriptExecutor) driver;
+	    	js.executeScript("window.scrollBy(0,300)");
+		}
+		public void enterpnrnumber(String pnr) {
+			// TODO Auto-generated method stub
+			pnrnumber.sendKeys(pnr);
+		}
+	//---------------------------------------------------------------------------------	
+		
+		public void livetrainstatus()
+		{
+			clicklivetrain.click();
+		}
+		public void clicklivetrainsta()
+		{
+			ExplicitWait(livetrain,5);
+	    	livetrain.click();
+		}
+		
+		
+		public void livestatus(String y) throws InterruptedException, AWTException  {
+	    	
+	    	ExplicitWait(livetraininput,2);
+	    	livetraininput.sendKeys(y);
+	    	//ExplicitWait(combobox,20);
+	    	Thread.sleep(3000);
+	    	//ExplicitWait(combolist,10);
+	    	r=new Robot();
+	    	r.keyPress(KeyEvent.VK_DOWN);
+	        r.keyRelease(KeyEvent.VK_DOWN);
+	        r.keyPress(KeyEvent.VK_ENTER);	       
+	        r.keyRelease(KeyEvent.VK_ENTER);
+		}
+		
+		
+		
+		
+		
+		
+		public void enteryourStop() throws AWTException
+		{
+			ExplicitWait(selectStop,10);
+			selectStop.click();
+		}
+		
+		public void enteryourstopinput() throws AWTException, InterruptedException
+		{   	//ExplicitWait(selectStop,10);
+//		         selectStop.click();
+			ExplicitWait(selectStopOption,10);//450,400
+//			selectStopOption.click();
+		
+			r=new Robot();
+			r.mouseMove(500, 450);
+	    	r.mousePress(InputEvent.BUTTON1_DOWN_MASK);
+	    	r.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+//	        r.keyRelease(KeyEvent.VK_DOWN);
+//	        r.keyPress(KeyEvent.VK_ENTER);	       
+//	        r.keyRelease(KeyEvent.VK_ENTER);
+		}
+		public void  Dateselect() throws AWTException, InterruptedException
+		{
+			ExplicitWait(clickdate,5);
+			clickdate.click();
+////			ExplicitWait(dateinput,10);
+//			dateinput.click();
+			
+			Thread.sleep(1000);
+			r=new Robot();
+			r.mouseMove(800, 450);//480
+			r.mousePress(InputEvent.BUTTON1_DOWN_MASK);
+			r.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+			
+//			r=new Robot();
+//			r.mouseMove(750, 450);//480
+//			r.mousePress(InputEvent.BUTTON1_DOWN_MASK);
+//			r.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+			
+		}
+		
+		
+		
+		public void livestatuscheckstatus()
+		{
+			livestatuscheck.click();
+		}
+	
+	
+		
+		public void checklivestatusMethod()
+		{ 
+			ExplicitWait(livestatuscheck,5);
+			livestatuscheck.click();
+			JavascriptExecutor js=(JavascriptExecutor) driver;
+	    	js.executeScript("window.scrollBy(0,300)");
+		}
+		
+		
+		
+}

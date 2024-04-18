@@ -1,0 +1,1112 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Apr 18, 2024 10:33:02 am</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@FilterTrain</a><a class="dropdown-item" href="#">@ValidPNR</a><a class="dropdown-item" href="#">@LiveStatus</a><a class="dropdown-item" href="#">@InvalidPNR</a><a class="dropdown-item" href="#">@SearchTrain</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">To check the functionality of Train module in Makemytrip web application</p>
+            <p class="text-sm">
+              <span>10:33:02 am</span> / <span>00:01:26:511</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">To check the functionality of Train module in Makemytrip web application</h5>
+<span class='badge badge-success'>04.18.2024 10:33:02 am</span>
+<span class='badge badge-danger'>04.18.2024 10:34:29 am</span>
+<span class='badge badge-default'>00:01:26:511</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>To validate the Book Train Ticket functionality of Trains option .</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>To validate the Book Train Ticket functionality of Trains option .</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on Homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Mmt_TrainStepDefinition.TrainSearch.takeScreendown(io.cucumber.java.Scenario)</span>
+      <div>To validate the Book Train Ticket functionality of Trains option .
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./Screenshots/embedded1.png' src="./Screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User clicks on the Train option</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Mmt_TrainStepDefinition.TrainSearch.takeScreendown(io.cucumber.java.Scenario)</span>
+      <div>To validate the Book Train Ticket functionality of Trains option .
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./Screenshots/embedded2.png' src="./Screenshots/embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters the "Mumbai","SBC","24,April 2024" and "Third AC"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Mmt_TrainStepDefinition.TrainSearch.takeScreendown(io.cucumber.java.Scenario)</span>
+      <div>To validate the Book Train Ticket functionality of Trains option .
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./Screenshots/embedded3.png' src="./Screenshots/embedded3.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And click on search option</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Mmt_TrainStepDefinition.TrainSearch.takeScreendown(io.cucumber.java.Scenario)</span>
+      <div>To validate the Book Train Ticket functionality of Trains option .
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./Screenshots/embedded4.png' src="./Screenshots/embedded4.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then list of train appears</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Mmt_TrainStepDefinition.TrainSearch.takeScreendown(io.cucumber.java.Scenario)</span>
+      <div>To validate the Book Train Ticket functionality of Trains option .
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./Screenshots/embedded5.png' src="./Screenshots/embedded5.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>To check AC filter is applied</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Mmt_TrainStepDefinition.TrainSearch.user_is_on_homepage()">
+                <span>Given User is on Homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>Mmt_TrainStepDefinition.TrainSearch.takeScreendown(io.cucumber.java.Scenario)</span>
+      <div>To check AC filter is applied
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./Screenshots/embedded6.png' src="./Screenshots/embedded6.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Mmt_TrainStepDefinition.TrainSearch.user_is_on_the_searchpage()">
+                <span>When User is on the searchpage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>Mmt_TrainStepDefinition.TrainSearch.takeScreendown(io.cucumber.java.Scenario)</span>
+      <div>To check AC filter is applied
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./Screenshots/embedded7.png' src="./Screenshots/embedded7.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Mmt_TrainStepDefinition.TrainSearch.click_on_ac_filter()">
+                <span>And click on AC filter</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>Mmt_TrainStepDefinition.TrainSearch.takeScreendown(io.cucumber.java.Scenario)</span>
+      <div>To check AC filter is applied
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./Screenshots/embedded8.png' src="./Screenshots/embedded8.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Mmt_TrainStepDefinition.TrainSearch.ac_trains_are_displayed()">
+                <span>Then AC trains are displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>Mmt_TrainStepDefinition.TrainSearch.takeScreendown(io.cucumber.java.Scenario)</span>
+      <div>To check AC filter is applied
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./Screenshots/embedded9.png' src="./Screenshots/embedded9.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="23"><span class="badge log pass-bg mr-2">Pass</span>to check the PNR status of my train ticket</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Mmt_TrainStepDefinition.TrainSearch.user_is_on_homepage()">
+                <span>Given User is on Homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>Mmt_TrainStepDefinition.TrainSearch.takeScreendown(io.cucumber.java.Scenario)</span>
+      <div>to check the PNR status of my train ticket
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./Screenshots/embedded10.png' src="./Screenshots/embedded10.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Mmt_TrainStepDefinition.TrainSearch.user_to_click_the_train_option_from_the_homepage()">
+                <span>When user to click the train option from the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>Mmt_TrainStepDefinition.TrainSearch.takeScreendown(io.cucumber.java.Scenario)</span>
+      <div>to check the PNR status of my train ticket
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./Screenshots/embedded11.png' src="./Screenshots/embedded11.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Mmt_TrainStepDefinition.TrainSearch.user_should_click_on_check_pnr_status()">
+                <span>And User should click on check pnr status</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>Mmt_TrainStepDefinition.TrainSearch.takeScreendown(io.cucumber.java.Scenario)</span>
+      <div>to check the PNR status of my train ticket
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./Screenshots/embedded12.png' src="./Screenshots/embedded12.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Mmt_TrainStepDefinition.TrainSearch.user_should_enter_the_valid_pnr_number(io.cucumber.datatable.DataTable)">
+                <span>And User should enter the valid pnr number</span>
+      <div><table class='markup-table table '><tr><td>4364810556</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>Mmt_TrainStepDefinition.TrainSearch.takeScreendown(io.cucumber.java.Scenario)</span>
+      <div>to check the PNR status of my train ticket
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./Screenshots/embedded13.png' src="./Screenshots/embedded13.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Mmt_TrainStepDefinition.TrainSearch.user_should_click_on_the_check_status_button()">
+                <span>And user should click on the check status button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>Mmt_TrainStepDefinition.TrainSearch.takeScreendown(io.cucumber.java.Scenario)</span>
+      <div>to check the PNR status of my train ticket
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./Screenshots/embedded14.png' src="./Screenshots/embedded14.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Mmt_TrainStepDefinition.TrainSearch.user_should_see_the_current_status_of_booked_tickets()">
+                <span>Then user should see the current status of booked tickets</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>Mmt_TrainStepDefinition.TrainSearch.takeScreendown(io.cucumber.java.Scenario)</span>
+      <div>to check the PNR status of my train ticket
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./Screenshots/embedded15.png' src="./Screenshots/embedded15.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="36"><span class="badge log fail-bg mr-2">Fail</span>to check the PNR status with in invalid PNR number</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="Mmt_TrainStepDefinition.TrainSearch.user_is_on_homepage()">
+                <span>Given User is on Homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>Mmt_TrainStepDefinition.TrainSearch.takeScreendown(io.cucumber.java.Scenario)</span>
+      <div>to check the PNR status with in invalid PNR number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./Screenshots/embedded16.png' src="./Screenshots/embedded16.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Mmt_TrainStepDefinition.TrainSearch.user_to_be_in_the_train_option_of_the_homepage()">
+                <span>When user to be in the train option of the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>Mmt_TrainStepDefinition.TrainSearch.takeScreendown(io.cucumber.java.Scenario)</span>
+      <div>to check the PNR status with in invalid PNR number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./Screenshots/embedded17.png' src="./Screenshots/embedded17.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Mmt_TrainStepDefinition.TrainSearch.user_will_click_on_check_pnr_status()">
+                <span>And User will click on check pnr status</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>Mmt_TrainStepDefinition.TrainSearch.takeScreendown(io.cucumber.java.Scenario)</span>
+      <div>to check the PNR status with in invalid PNR number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./Screenshots/embedded18.png' src="./Screenshots/embedded18.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Mmt_TrainStepDefinition.TrainSearch.user_should_enter_the_invalid_pnr_number(io.cucumber.datatable.DataTable)">
+                <span>And User should enter the invalid pnr number</span>
+      <div><table class='markup-table table '><tr><td>4364816755</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>Mmt_TrainStepDefinition.TrainSearch.takeScreendown(io.cucumber.java.Scenario)</span>
+      <div>to check the PNR status with in invalid PNR number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./Screenshots/embedded19.png' src="./Screenshots/embedded19.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Mmt_TrainStepDefinition.TrainSearch.user_will_click_on_the_check_status_button()">
+                <span>And user will click on the check status button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>Mmt_TrainStepDefinition.TrainSearch.takeScreendown(io.cucumber.java.Scenario)</span>
+      <div>to check the PNR status with in invalid PNR number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./Screenshots/embedded20.png' src="./Screenshots/embedded20.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="Mmt_TrainStepDefinition.TrainSearch.user_will_see_pnr_is_either_not_generated()">
+                <span>Then user will see PNR is either not generated</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at Mmt_TrainStepDefinition.TrainSearch.user_will_see_pnr_is_either_not_generated(TrainSearch.java:179)
+	at ✽.user will see PNR is either not generated(file:///C:/Users/S119/Contacts/Mmt_Train/src/test/resource/Features123/Train.feature:49)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>Mmt_TrainStepDefinition.TrainSearch.takeScreendown(io.cucumber.java.Scenario)</span>
+      <div>to check the PNR status with in invalid PNR number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./Screenshots/embedded21.png' src="./Screenshots/embedded21.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="49"><span class="badge log pass-bg mr-2">Pass</span>to check the live status of train</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Mmt_TrainStepDefinition.TrainSearch.user_is_on_homepage()">
+                <span>Given User is on Homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>Mmt_TrainStepDefinition.TrainSearch.takeScreendown(io.cucumber.java.Scenario)</span>
+      <div>to check the live status of train
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./Screenshots/embedded22.png' src="./Screenshots/embedded22.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Mmt_TrainStepDefinition.TrainSearch.user_in_on_the_train_page()">
+                <span>When user in on the train page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>Mmt_TrainStepDefinition.TrainSearch.takeScreendown(io.cucumber.java.Scenario)</span>
+      <div>to check the live status of train
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./Screenshots/embedded23.png' src="./Screenshots/embedded23.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Mmt_TrainStepDefinition.TrainSearch.user_should_click_on_live_train_status()">
+                <span>And user should click on live train status</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>Mmt_TrainStepDefinition.TrainSearch.takeScreendown(io.cucumber.java.Scenario)</span>
+      <div>to check the live status of train
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./Screenshots/embedded24.png' src="./Screenshots/embedded24.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Mmt_TrainStepDefinition.TrainSearch.user_should_enter_the_train_number_and_date_of_the_journey(io.cucumber.datatable.DataTable)">
+                <span>And user should enter the train number and date of the journey</span>
+      <div><table class='markup-table table '><tr><td>11301</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>Mmt_TrainStepDefinition.TrainSearch.takeScreendown(io.cucumber.java.Scenario)</span>
+      <div>to check the live status of train
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./Screenshots/embedded25.png' src="./Screenshots/embedded25.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Mmt_TrainStepDefinition.TrainSearch.user_should_be_able_to_click_on_check_status_to_the_live_status_of_the_train()">
+                <span>And user should be able to click on check status to the live status of the train</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>Mmt_TrainStepDefinition.TrainSearch.takeScreendown(io.cucumber.java.Scenario)</span>
+      <div>to check the live status of train
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./Screenshots/embedded26.png' src="./Screenshots/embedded26.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Mmt_TrainStepDefinition.TrainSearch.user_should_be_able_see_the_live_status_of_particular_train()">
+                <span>Then user should be able see the live status of particular train</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>Mmt_TrainStepDefinition.TrainSearch.takeScreendown(io.cucumber.java.Scenario)</span>
+      <div>to check the live status of train
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./Screenshots/embedded27.png' src="./Screenshots/embedded27.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:34:03 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='47'>Then user will see PNR is either not generated</a>
+<div class="">
+<span class="badge badge-default">To check the functionality of Train module in Makemytrip web application.to check the PNR status with in invalid PNR number.Then user will see PNR is either not generated</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">5</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@FilterTrain</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@FilterTrain</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:33:19 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='14'>To check AC filter is applied</a>
+<div class="">
+<span class="badge badge-default">To check the functionality of Train module in Makemytrip web application.To check AC filter is applied</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@ValidPNR</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@ValidPNR</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:33:32 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='23'>to check the PNR status of my train ticket</a>
+<div class="">
+<span class="badge badge-default">To check the functionality of Train module in Makemytrip web application.to check the PNR status of my train ticket</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@LiveStatus</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@LiveStatus</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:34:06 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='49'>to check the live status of train</a>
+<div class="">
+<span class="badge badge-default">To check the functionality of Train module in Makemytrip web application.to check the live status of train</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@InvalidPNR</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@InvalidPNR</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:33:47 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='36'>to check the PNR status with in invalid PNR number</a>
+<div class="">
+<span class="badge badge-default">To check the functionality of Train module in Makemytrip web application.to check the PNR status with in invalid PNR number</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@SearchTrain</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@SearchTrain</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:33:02 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>To validate the Book Train Ticket functionality of Trains option .</a>
+<div class="">
+<span class="badge badge-default">To check the functionality of Train module in Makemytrip web application.To validate the Book Train Ticket functionality of Trains option .</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Apr 18, 2024 10:33:02 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Apr 18, 2024 10:34:29 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='80%'><b>4</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='20%'><b>1</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='98%'><b>53</b> steps passed</small></div>
+<div>
+<small data-tooltip='1%'><b>1</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"To check the functionality of Train module in Makemytrip web application":86.511
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@FilterTrain</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@ValidPNR</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@LiveStatus</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@InvalidPNR</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@SearchTrain</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>AppName</td>
+<td>Eclipse</td>
+</tr>
+<tr>
+<td>user</td>
+<td>S119</td>
+</tr>
+<tr>
+<td>build</td>
+<td>windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 4,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 53,
+failGrandChild: 1,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

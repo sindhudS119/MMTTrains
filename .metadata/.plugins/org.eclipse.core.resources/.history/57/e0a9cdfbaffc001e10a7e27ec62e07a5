@@ -1,0 +1,17 @@
+package Mmt_TrainRunner;
+
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
+
+//@RunWith(Cucumber.class)
+@CucumberOptions(features = "src\\test\\resource\\Features123\\Train.feature",
+
+
+glue = "Mmt_TrainStepDefinition",
+
+tags="@scenario3")
+
+public class TrainSearchRunner extends AbstractTestNGCucumberTests  {
+	
+
+}

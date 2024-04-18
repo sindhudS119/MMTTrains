@@ -1,0 +1,31 @@
+Feature: To check the functionality of Train module in Makemytrip web application
+
+ Background:
+    Given User is on Homepage
+    
+    
+    @scenario1
+  Scenario Outline: To validate the Book Train Ticket functionality of Trains option .
+   
+    When User clicks on the Train option
+    And User enters the "<fromstation>","<tostation>","<traveldate>" and "<class>"
+    And click on search option
+    Then list of train appears
+    
+ Examples:
+    
+|fromstation|tostation|traveldate|class|
+|Mumbai| SBC| 24,April 2024 | Third AC |
+
+  @scenario2
+  Scenario Outline: To validate the same inputs to book train tickets 
+   
+    When User is on the train page
+    And User enters same input for "<fromstation>" and "<tostation>"
+    And click on search button
+    Then Error message appears
+    
+ Examples:
+    
+|fromstation|tostation|
+|Delhi|Delhi| 

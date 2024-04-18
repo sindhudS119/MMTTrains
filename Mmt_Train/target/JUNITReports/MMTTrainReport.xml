@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="86.638" tests="5" skipped="0" failures="1" errors="0">
+<testcase classname="To check the functionality of Train module in Makemytrip web application" name="To validate the Book Train Ticket functionality of Trains option . - Example #1.1" time="16.192">
+<system-out><![CDATA[
+Given User is on Homepage...................................................passed
+When User clicks on the Train option........................................passed
+And User enters the "Mumbai","SBC","24,April 2024" and "Third AC"...........passed
+And click on search option..................................................passed
+Then list of train appears..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To check the functionality of Train module in Makemytrip web application" name="To check AC filter is applied" time="12.932">
+<system-out><![CDATA[
+Given User is on Homepage...................................................passed
+When User is on the searchpage..............................................passed
+And click on AC filter......................................................passed
+Then AC trains are displayed................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To check the functionality of Train module in Makemytrip web application" name="to check the PNR status of my train ticket" time="16.07">
+<system-out><![CDATA[
+Given User is on Homepage...................................................passed
+When user to click the train option from the homepage.......................passed
+And User should click on check pnr status...................................passed
+And User should enter the valid pnr number..................................passed
+And user should click on the check status button............................passed
+Then user should see the current status of booked tickets...................passed
+]]></system-out>
+</testcase>
+<testcase classname="To check the functionality of Train module in Makemytrip web application" name="to check the PNR status with in invalid PNR number" time="18.024">
+<system-out><![CDATA[
+Given User is on Homepage...................................................passed
+When user to be in the train option of the homepage.........................passed
+And User will click on check pnr status.....................................passed
+And User should enter the invalid pnr number................................passed
+And user will click on the check status button..............................passed
+Then user will see PNR is either not generated..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="To check the functionality of Train module in Makemytrip web application" name="to check the live status of train" time="23.207">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at Mmt_TrainStepDefinition.TrainSearch.user_should_be_able_see_the_live_status_of_particular_train(TrainSearch.java:223)
+	at ✽.user should be able see the live status of particular train(file:///C:/Users/S119/Contacts/Mmt_Train/src/test/resource/Features123/Train.feature:62)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User is on Homepage...................................................passed
+When user in on the train page..............................................passed
+And user should click on live train status..................................passed
+And user should enter the train number and date of the journey..............passed
+And user should be able to click on check status to the live status of the train.passed
+Then user should be able see the live status of particular train............failed
+]]></system-out>
+</testcase>
+</testsuite>
